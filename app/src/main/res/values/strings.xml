@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">APOD ID</string>
+    <string name="judul">Judul</string>
+    <string name="date">date hh/mm/yyy</string>
+    <string name="detail">Penjelasan</string>
+    <string name="apod_indonesia">APOD INDONESIA</string>
+    <string name="nama">Muhammad Zaelani Saputra</string>
+    <string name="email">muhammadzaelanisap@gmail.com</string>
+    <string name="ig">zaelanisap</string>
+    <string name="kredit_foto"><![CDATA[Kredit Foto &\nHak Cipta]]></string>
+    <string name="kredit_konten">Kredit Konten</string>
+    <string name="like">Like</string>
+    <string name="share">Share</string>
+    <string name="alih_bahasa">Alih Bahasa</string>
+</resources>

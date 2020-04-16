@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/detail_tb_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Judul" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/detail_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/darker_gray"
+                android:scaleType="fitXY"
+                android:src="@drawable/image2" />
+
+            <TextView
+                android:id="@+id/tv_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D000000"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                tools:text="@string/date" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <Button
+                android:id="@+id/btn_detail_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/ic_like"
+                android:drawablePadding="4dp"
+                android:text="@string/like"/>
+            <Button
+                android:id="@+id/btn_detail_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btn_detail_like"
+                android:drawableStart="@drawable/ic_share"
+                android:drawablePadding="4dp"
+                android:text="@string/share"/>
+        </RelativeLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+
+                <TextView
+                    style="@style/subtitle"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/kredit_foto" />
+
+                <TextView
+                    android:id="@+id/tv_detail_kredit_foto"
+                    style="@style/field"
+                    tools:text="nama kreator" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/subtitle"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/kredit_konten"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_detail_kredit_konten"
+                    style="@style/field"
+                    android:layout_marginEnd="90dp"
+                    tools:text="nama kreator" />
+            </TableRow>
+
+
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_marginRight="8dp"
+            android:text="@string/detail" />
+        <TextView
+            android:id="@+id/tv_detail_detail"
+            style="@style/field"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            tools:text="lorem dolar ipsum"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/subtitle"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/alih_bahasa" />
+
+                <TextView
+                    android:id="@+id/tv_detail_translator"
+                    style="@style/field"
+                    tools:text="nama translator" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
